@@ -7,10 +7,6 @@ print(2*2+2)
 print(2*(2+2))
 print((2*2+2) == (2*(2+2)))
 #4th program
-print('123.456')
-number_string = '123.456'
-digit = number_string[4]
-print(digit)
 print(float('123.456'))
 print(123.456*10)
 print(int(1234.56%10))
