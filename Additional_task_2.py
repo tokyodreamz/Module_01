@@ -1,15 +1,11 @@
-def generate_password(n):
-    result = ""
-    for i in range(1, 21):
-        for j in range(i + 1, 21):
-            if (i + j) % n == 0:
-                result += str(i) + str(j)
-    return result
+import random
+result = []
+n = random.randint(3, 20)
 
-result1 = generate_password(9)
-result2 = generate_password(11)
-result3 = generate_password(18)
+for i in range(1, 21):
+    for j in range(i, 21):
 
-print(result1)
-print(result2)
-print(result3)
+        if n % (i + j) == 0 and i != j:
+            result.append(i)
+            result.append(j)
+print(*result, sep='')
