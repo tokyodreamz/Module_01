@@ -1,6 +1,7 @@
 import hashlib
 from time import sleep
 
+
 class User:
     def __init__(self, nickname, password, age):
         self.nickname = nickname
@@ -97,6 +98,6 @@ ur.register('urban_pythonist', 'iScX4vIJClb9YQavjAgF', 25)
 ur.watch_video('Для чего девушкам парень программист?')
 
 ur.register('vasya_pupkin', 'F8098FM8fjm9jmi', 55)
-print(ur.current_user)
+print(ur.current_user.nickname)
 
 ur.watch_video('Лучший язык программирования 2024 года!')
